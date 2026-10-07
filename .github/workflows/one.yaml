@@ -1,0 +1,8 @@
+name: one
+on: [ workflow_dispatch, push]
+jobs:
+  echo_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo context
+        run: echo "${{ github }}"
